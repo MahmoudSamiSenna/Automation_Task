@@ -1,4 +1,4 @@
-# Automation_Task
+# Inmotion Hosting Website E2E Automation Project
 @Steps to execute
 1-Click on "Code" 
 2-Download zip

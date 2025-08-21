@@ -1,20 +1,11 @@
 package Framework.TestComponents;
 
 import Framework.PageObjects.HomePage;
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.asserts.SoftAssert;
-
-import java.io.File;
-import java.io.IOException;
 import java.time.Duration;
 
 public class BaseTest {
@@ -43,6 +34,4 @@ public class BaseTest {
         Thread.sleep(3000);
         driver.quit();
     }
-
-
 }

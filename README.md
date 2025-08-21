@@ -23,3 +23,15 @@ Requirements:
 - TestNG
 - POM Design Pattern
 - Internet access
+
+## Steps to run
+Steps:
+- Click on "Code"
+- Click on "Download ZIP"
+- Unzip the file
+- Load all pom.ml dependencies
+- Run code from "InmotionHostingTest.xml"
+
+## Demo
+Check:
+[driver](https://drive.google.com/drive/folders/1MXYiFu7v0nfL46ZP4IO0joK_lWMClygj?usp=sharing)

@@ -38,8 +38,9 @@ public class BaseTest {
         return homePage;
     }
     @AfterMethod
-    public void tearDown(){
+    public void tearDown() throws InterruptedException {
         softAssert.assertAll();
+        Thread.sleep(3000);
         driver.quit();
     }
 

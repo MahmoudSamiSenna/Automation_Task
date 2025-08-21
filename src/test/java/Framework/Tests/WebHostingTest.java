@@ -17,7 +17,7 @@ public class WebHostingTest extends BaseTest {
     String domainPrice ="$38.99 USD";
     String totalPrice="$109.35 USD";
     @Test (priority = 1)
-    public void addDomainAndHostingPlanToCard() throws IOException {
+    public void addDomainAndHostingPlanToCard() throws IOException, InterruptedException {
         softAssert.assertTrue(homePage.getPageTitle().contains(pageTitle));
         DomainPage domainPage = homePage.clickOnDomains();
         DomainSearchResultPage domainSearchResultPage = domainPage.searchForDomain(domainName);

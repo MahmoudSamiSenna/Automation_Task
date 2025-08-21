@@ -20,20 +20,22 @@ public class DomainPage extends HomePage {
     WebElement searchButton;
     @FindBy (xpath = "(//span[@class='ctw-font-bold ctw-text-red-700'])[1]")
     WebElement invalidMessage;
-    public DomainSearchResultPage searchForDomain (String domainName) throws IOException {
+    public DomainSearchResultPage searchForDomain (String domainName) throws IOException, InterruptedException {
         waitElementToBeVisible(searchBox);
         searchBox.sendKeys(domainName);
         searchButton.click();
+        Thread.sleep(2000);
         getScreenshot("Domain search",driver);
         return new DomainSearchResultPage(driver);
     }
-    public void searchInvalidDomain(String domainName) throws IOException {
+    public void searchInvalidDomain(String domainName)  {
         waitElementToBeVisible(searchBox);
         searchBox.sendKeys(domainName);
         searchButton.click();
-        getScreenshot("Invalid domain search",driver);
     }
-    public String getErrorMessage(){
+    public String getErrorMessage() throws IOException {
+        waitElementToBeVisible(invalidMessage);
+        getScreenshot("Invalid domain search",driver);
         return invalidMessage.getText();
     }
 }

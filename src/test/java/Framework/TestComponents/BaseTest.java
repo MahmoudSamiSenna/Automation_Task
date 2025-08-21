@@ -24,7 +24,7 @@ public class BaseTest {
 
     public WebDriver initializeDriver() {
         softAssert = new SoftAssert();
-        driver = new EdgeDriver();
+        driver = new ChromeDriver();
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

@@ -12,3 +12,14 @@ This project automates the search for a domain and adds web hosting plan for [In
 - Going to cart and checking the total price of domain and web hosting plan  
 - Refreshing the page and checking them again  
 - Checking error message after entering an invalid domain  
+
+## Tools used
+Requirements: 
+- Java 17+
+- Maven
+- IntelliJ IDEA
+- WebDriver (EdgeDriver)
+- Selenium WebDriver
+- TestNG
+- POM Design Pattern
+- Internet access

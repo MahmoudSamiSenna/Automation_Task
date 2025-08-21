@@ -16,7 +16,7 @@ public class DomainSearchResultPage extends HomePage{
     WebElement totalPrice;
 
 
-    public String getTotalPrice(){
+    public String getDomainPrice(){
         return totalPrice.getText();
     }
     public boolean checkTotalPriceAppearance() {

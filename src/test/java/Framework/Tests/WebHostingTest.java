@@ -21,8 +21,8 @@ public class WebHostingTest extends BaseTest {
         softAssert.assertTrue(homePage.getPageTitle().contains(pageTitle));
         DomainPage domainPage = homePage.clickOnDomains();
         DomainSearchResultPage domainSearchResultPage = domainPage.searchForDomain(domainName);
-        softAssert.assertEquals(domainSearchResultPage.getDomainPrice(), domainPrice);
         softAssert.assertTrue(domainSearchResultPage.checkTotalPriceAppearance());
+        softAssert.assertEquals(domainSearchResultPage.getDomainPrice(), domainPrice);
         homePage.goTo();
         WebHostingPlansPage webHostingPlansPage=homePage.clickOnWebHostingPlans();
         CheckOutPage checkOutPage=webHostingPlansPage.clickOnSelectPlanButton();

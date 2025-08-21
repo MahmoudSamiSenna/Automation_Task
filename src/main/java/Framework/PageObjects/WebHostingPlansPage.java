@@ -22,7 +22,7 @@ public class WebHostingPlansPage extends HomePage {
         JavascriptExecutor js=(JavascriptExecutor)driver;
         js.executeScript("window.scrollBy(0,1800)");
         selectPlanButton.click();
-        js.executeScript("window.scrollBy(0,500)");
+        js.executeScript("window.scrollBy(0,800)");
         waitElementToBeVisible(selectPlanForOneYear);
         selectPlanForOneYear.click();
         return new CheckOutPage(driver);
